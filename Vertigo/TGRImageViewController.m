@@ -34,6 +34,7 @@
 - (id)initWithImage:(UIImage *)image {
     if (self = [super init]) {
         _image = image;
+        self.view.frame = [UIApplication sharedApplication].keyWindow.bounds;
     }
     
     return self;
